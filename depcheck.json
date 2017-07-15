@@ -1,0 +1,13 @@
+{
+  "files": [
+    "depcheck.js",
+    "localcheck.js",
+    "dependencies.js"
+  ],
+  "filesToCheck": ["package.json"],
+  "ignorePackages": [
+    "eslint",
+    "eslint-config-airbnb-base",
+    "eslint-plugin-import"
+  ]
+}

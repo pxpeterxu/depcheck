@@ -7,7 +7,7 @@
 //
 
 var fs = require('fs');
-var Promise = require('bluebird');
+var Promise = require('es6-promise');
 var path = require('path');
 var _ = require('lodash');
 var glob = Promise.promisify(require('multi-glob').glob);
