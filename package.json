@@ -1,11 +1,11 @@
 {
   "name": "myrtlelime-depcheck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool for checking for unused dependencies",
   "main": "depcheck.js",
   "bin": {
-    "depcheck": "./depcheck.js",
-    "localcheck": "./localcheck.js"
+    "depcheck": "depcheck.js",
+    "localcheck": "localcheck.js"
   },
   "dependencies": {
     "builtin-modules": "^1.1.1",

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict';
 
 var Promise = require('es6-promise').Promise;
@@ -15,9 +16,10 @@ var getFullDependenciesForFiles = dependencies.getFullDependenciesForFiles;
 var builtInKeyed = _.zipObject(builtIn, builtIn);
 
 var configFile = process.argv[2];
-var printFixed = process.argv[3] === '--fix';
+var printFixed = process.argv[3] === 'fix';
+console.log(process.argv);
 if (!configFile || !fs.existsSync(configFile)) {
-  console.log('USAGE: node depcheck.js depcheck-config.json [--fix]');
+  console.log('USAGE: node depcheck.js depcheck-config.json [fix]');
   console.log('--------------------------------------------\n');
   console.log('Please create a depcheck-config.json similar to the below');
   console.log(JSON.stringify({
