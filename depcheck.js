@@ -17,7 +17,6 @@ var builtInKeyed = _.zipObject(builtIn, builtIn);
 
 var configFile = process.argv[2];
 var printFixed = process.argv[3] === 'fix';
-console.log(process.argv);
 if (!configFile || !fs.existsSync(configFile)) {
   console.log('USAGE: node depcheck.js depcheck-config.json [fix]');
   console.log('--------------------------------------------\n');
