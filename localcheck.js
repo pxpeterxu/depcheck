@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 'use strict';
 
 //
@@ -8,10 +9,11 @@
 //
 
 var fs = require('fs');
-var Promise = require('es6-promise');
 var path = require('path');
 var _ = require('lodash');
-var glob = Promise.promisify(require('multi-glob').glob);
+var Promise = require('es6-promise');
+var promisify = require('es6-promisify');
+var glob = promisify(require('multi-glob').glob);
 
 var getLocalDependenciesForFiles = require('./dependencies').getLocalDependenciesForFiles;
 
